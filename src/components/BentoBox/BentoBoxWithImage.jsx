@@ -3,7 +3,7 @@ import styles from './BentoBox.module.css'
 
 
 const BentoBoxWithImage = (props) => {
-    const { box, image, fade } = props;
+    const { box, image} = props;
 
     if(box === null) {
         return (

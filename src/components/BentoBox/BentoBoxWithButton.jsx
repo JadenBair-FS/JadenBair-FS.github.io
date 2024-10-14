@@ -10,6 +10,8 @@ import dribbbleLogoWhite from '../../assets/dribbble-white.svg';
 const BentoBoxWithButton = (props) => {
     const [isHovered, setIsHovered] = useState(false);
 
+    const { box } = props;
+
     let image = null;
 
     if (props.text === "LinkedIn") {
@@ -22,7 +24,9 @@ const BentoBoxWithButton = (props) => {
 
     return (
         <div 
-            className={styles.bentoBoxWithButton} 
+            className={
+               styles.bentoBoxWithButton
+            }
             onMouseEnter={() => setIsHovered(true)} 
             onMouseLeave={() => setIsHovered(false)}
             onFocus={() => setIsHovered(true)} 

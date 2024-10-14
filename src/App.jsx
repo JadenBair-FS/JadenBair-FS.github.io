@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react'
+import React from 'react'
 import BentoBoxHeader from './components/BentoBox/BentoBoxHeader'
 import BentoBoxImage from './components/BentoBox/BentoBoxWithImage'
 import BentoBoxWithButton from './components/BentoBox/BentoBoxWithButton'
@@ -32,9 +32,9 @@ function App() {
         />
         <BentoBoxImage fade="fade-down" box="headerBento2" image={profilePhoto} alt="Profile photo of Jaden" />
         <div className="bento-button-container headerBento3">
-          <BentoBoxWithButton text="LinkedIn" />
-          <BentoBoxWithButton text="Dribbble"/>
-          <BentoBoxWithButton text="GitHub" />
+          <BentoBoxWithButton box="buttonBento1" text="LinkedIn" />
+          <BentoBoxWithButton box="buttonBento2" text="Dribbble"/>
+          <BentoBoxWithButton box="buttonBento3" text="GitHub" />
         </div>
         </section>
         <section className="Projects-Container">

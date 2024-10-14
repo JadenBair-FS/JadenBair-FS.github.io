@@ -56,6 +56,18 @@
     grid-area: headerBento3;
 }
 
+.buttonBento1 {
+    grid-area: buttonBento1;
+}
+
+.buttonBento2 {
+    grid-area: buttonBento2;
+}
+
+.buttonBento3 {
+    grid-area: buttonBento3;
+}
+
 .bentoBoxWithButton {
     background-color: white;
     border-radius: 20px;
@@ -202,5 +214,9 @@ p {
 
     .bentoBoxWithButton img {
         width: 25%;
+    }
+
+    .contactForm h1 {
+        font-size: 2rem;
     }
 }
