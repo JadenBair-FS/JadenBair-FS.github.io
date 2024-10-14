@@ -1,0 +1,206 @@
+.bentoBoxHeader {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.bentoBoxHeader h1 {
+    font-size: 3rem;
+}
+
+.bentoBoxHeader h2 {
+    font-size: 2rem;
+}
+
+.bentoBoxWithImage {
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+}
+
+.bentoBoxWithImage:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.box1 {
+    grid-area: bentoBox1;
+}
+
+.box2 {
+    grid-area: bentoBox2;
+}
+
+.box3 {
+    grid-area: bentoBox3;
+}
+
+.box4 {
+    grid-area: bentoBox4;
+    background-position: left;
+}
+
+.box5 {
+    grid-area: bentoBox5;
+}
+
+.headerBento1 {
+    grid-area: headerBento1;
+}
+
+.headerBento2 {
+    grid-area: headerBento2;
+}
+
+.headerBento3 {
+    grid-area: headerBento3;
+}
+
+.bentoBoxWithButton {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    transition: transform .2s;
+}
+
+.bentoBoxWithButton img {
+    width: 15%;
+}
+
+.bentoBoxWithButton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+    
+}
+
+
+.pGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.textGroup {
+    margin: 1rem;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contactForm h1 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.contactFormTop {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    margin: 1rem;
+}
+
+.contactFormHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormTopInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm input {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    font: inherit;
+
+}
+
+.contactFormBottom {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem; 
+}
+
+.contactFormBottom textarea {
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    padding: .5rem;
+    font: inherit;
+}
+
+.contactFormButton {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    align-self: end;
+    width: 10%;
+    border: 1px solid #D9D9D9;
+    background-color: black;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contactFormButton:hover {
+    background-color: white;
+    color: black;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 900px) {
+    .bentoBoxHeader {
+        text-align: center;
+    }
+
+    .bentoBoxWithButton {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bentoBoxWithButton img {
+        width: 35%;
+    }
+
+    .contactFormHeader {
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .contactFormTop {
+        grid-template-columns: 1fr;
+    }
+
+    .contactFormButton {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .bentoBoxHeader h1 {
+        font-size: 1.5rem;
+    }
+
+    .bentoBoxWithButton {
+        padding: .5rem;
+    }
+
+    .bentoBoxWithButton img {
+        width: 25%;
+    }
+}
