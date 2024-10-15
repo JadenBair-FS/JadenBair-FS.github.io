@@ -6,7 +6,6 @@ import githubLogo from '../../assets/github-black.svg';
 import githubLogoWhite from '../../assets/github-white.svg';
 import dribbbleLogo from '../../assets/dribbble-black.svg';
 import dribbbleLogoWhite from '../../assets/dribbble-white.svg';
-
 const BentoBoxWithButton = (props) => {
     const [isHovered, setIsHovered] = useState(false);
 
