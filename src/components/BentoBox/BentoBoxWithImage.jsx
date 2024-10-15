@@ -16,8 +16,8 @@ const BentoBoxWithImage = (props) => {
 
     return (
         <div 
-            className={`${styles.bentoBoxWithImage} ${styles[box]}`} 
-            style={{ backgroundImage: `url(${image})` }}
+            className={`${styles.bentoBoxWithImage} ${styles[box]}`}
+            style={{ backgroundImage: `url(${image})` }} 
         >
         </div>
     );

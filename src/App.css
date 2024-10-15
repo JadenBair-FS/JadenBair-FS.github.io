@@ -80,7 +80,7 @@
 @media (max-width: 480px) {
   .Header-Container {
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr .5fr .5fr;
+    grid-template-rows: .5fr 1fr .5fr;
     grid-template-areas:
       "headerBento1"
       "headerBento2"
@@ -88,8 +88,8 @@
   }
 
   .bento-button-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 

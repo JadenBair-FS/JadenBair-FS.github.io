@@ -12,9 +12,9 @@
 }
 
 .bentoBoxWithImage {
-    border-radius: 20px;
     background-size: cover;
     background-position: center;
+    border-radius: 20px;
     transition: transform .2s;
 }
 
@@ -209,11 +209,15 @@ p {
     }
 
     .bentoBoxWithButton {
-        padding: .5rem;
+        padding: auto;
+    }
+
+    .bentoBoxWithButton h3 {
+        font-size: 0rem;
     }
 
     .bentoBoxWithButton img {
-        width: 25%;
+        width: 100%;
     }
 
     .contactForm h1 {
