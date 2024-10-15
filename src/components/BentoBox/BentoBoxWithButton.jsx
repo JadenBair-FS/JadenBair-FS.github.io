@@ -10,7 +10,7 @@ import dribbbleLogoWhite from '../../assets/dribbble-white.svg';
 const BentoBoxWithButton = (props) => {
     const [isHovered, setIsHovered] = useState(false);
 
-    const { box } = props;
+    const { link } = props;
 
     let image = null;
 
@@ -22,6 +22,13 @@ const BentoBoxWithButton = (props) => {
         image = isHovered ? dribbbleLogoWhite : dribbbleLogo;
     }
 
+    const handleKeyPress = (e) => {
+        console.log(e.key);
+        if (e.key === 'Enter' && isHovered) {
+            window.open(link);
+        }
+    }
+
     return (
         <div 
             className={
@@ -31,6 +38,8 @@ const BentoBoxWithButton = (props) => {
             onMouseLeave={() => setIsHovered(false)}
             onFocus={() => setIsHovered(true)} 
             onBlur={() => setIsHovered(false)}
+            onClick={() => window.open(props.link)}
+            onKeyDown={handleKeyPress}
         >
             <h3>{props.text}</h3>
             <img src={image} alt={`${props.text} logo`} />

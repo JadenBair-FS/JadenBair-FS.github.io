@@ -32,9 +32,9 @@ function App() {
         />
         <BentoBoxImage fade="fade-down" box="headerBento2" image={profilePhoto} alt="Profile photo of Jaden" />
         <div className="bento-button-container headerBento3">
-          <BentoBoxWithButton box="buttonBento1" text="LinkedIn" />
-          <BentoBoxWithButton box="buttonBento2" text="Dribbble"/>
-          <BentoBoxWithButton box="buttonBento3" text="GitHub" />
+          <BentoBoxWithButton box="buttonBento1" text="LinkedIn" link="https://www.linkedin.com/in/jadenbair" />
+          <BentoBoxWithButton box="buttonBento2" text="Dribbble" link="https://dribbble.com/jadenbair"/>
+          <BentoBoxWithButton box="buttonBento3" text="GitHub" link="https://github.com/JadenBair-FS"/>
         </div>
         </section>
         <section className="Projects-Container">
