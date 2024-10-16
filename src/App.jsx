@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom';
 import BentoBoxHeader from './components/BentoBox/BentoBoxHeader'
 import BentoBoxImage from './components/BentoBox/BentoBoxWithImage'
@@ -8,11 +8,11 @@ import Modal from './components/Modal/Modal'
 import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 
 
-import profilePhoto from './assets/profile-photo.jpeg'
-import project1 from './assets/project1.png'
-import project2 from './assets/project2.png'
-import project3 from './assets/project3.png'
-import project4 from './assets/project4.png'
+import profilePhoto from './assets/profile-photo.webp'
+import project1 from './assets/project1.webp'
+import project2 from './assets/project2.webp'
+import project3 from './assets/project3.webp'
+import project4 from './assets/project4.webp'
 
 
 import './App.css'
@@ -25,6 +25,14 @@ function App() {
   const [showProject3Modal, setShowProject3Modal] = useState(false)
   const [showProject4Modal, setShowProject4Modal] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
+
+  useEffect(() => {
+    const body = document.querySelector('body')
+
+    body.style.overflow = modalOpen ? 'hidden' : 'auto';
+
+  }, [modalOpen])
+
  
 
   return (
