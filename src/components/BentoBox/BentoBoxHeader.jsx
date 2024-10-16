@@ -3,7 +3,7 @@ import styles from './BentoBox.module.css'
 
 const BentoBoxWithText = (props) => {
 
-    const { box, fade } = props;
+    const { box } = props;
 
     if(box) {
         return (

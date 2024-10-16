@@ -1,3 +1,5 @@
+@import url('./var.css');
+
 #root {
   margin: 0;
   padding: 2rem;
@@ -6,7 +8,29 @@
 .App {
   min-height: 100vh;
   width: 80vw;
+  transition: all .5s ease-in-out;
 }
+
+.Top-Page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.top-pgroup {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.top-pgroup a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 
 .Header-Container {
   display: grid;
@@ -37,11 +61,14 @@
 }
 
 .Contact-Container {
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: 20px;
   padding: 1rem;
   margin-top: 1rem;
+  filter: drop-shadow(var(--card-dropshadow));
 }
+
+
 
 
 @media (max-width: 900px) {

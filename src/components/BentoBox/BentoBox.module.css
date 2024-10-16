@@ -1,6 +1,9 @@
+@import url('../../var.css');
+
 .bentoBoxHeader {
-    background-color: white;
+    background-color: var(--card-background);
     border-radius: 20px;
+    filter: drop-shadow(var(--card-dropshadow));
 }
 
 .bentoBoxHeader h1 {
@@ -20,7 +23,7 @@
 
 .bentoBoxWithImage:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .box1 {
@@ -69,24 +72,25 @@
 }
 
 .bentoBoxWithButton {
-    background-color: white;
+    background-color: var(--card-background);
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     transition: transform .2s;
+    filter: drop-shadow(var(--card-dropshadow));
 }
 
-.bentoBoxWithButton img {
+.bentoBoxWithButton svg {
     width: 15%;
 }
 
 .bentoBoxWithButton:hover {
     cursor: pointer;
     transform: scale(1.05);
-    background-color: black;
-    color: white;
+    background-color: var(--card-hover);
+    color: var(--card-hover-text);
     
 }
 
@@ -133,8 +137,10 @@
     margin-bottom: 1rem;
     padding: .5rem;
     border-radius: 10px;
-    border: 1px solid #D9D9D9;
+    background-color: var(--background);
+    border: var(--input-border);
     font: inherit;
+    color: var(--text-color);
 
 }
 
@@ -146,7 +152,8 @@
 
 .contactFormBottom textarea {
     border-radius: 10px;
-    border: 1px solid #D9D9D9;
+    background-color: var(--background);
+    border: var(--input-border);
     padding: .5rem;
     font: inherit;
 }
@@ -157,17 +164,17 @@
     border-radius: 10px;
     align-self: end;
     width: 10%;
-    border: 1px solid #D9D9D9;
-    background-color: black;
-    color: white;
+    border: var(--input-border);
+    background-color: var(--card-background);
+    color: var(--text-color);
     font: inherit;
     font-weight: bold;
     cursor: pointer;
 }
 
 .contactFormButton:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--card-hover);
+    color: var(--card-hover-text);
 }
 
 
@@ -222,5 +229,9 @@ p {
 
     .contactForm h1 {
         font-size: 2rem;
+    }
+
+    .box4 {
+        background-position: center;
     }
 }
