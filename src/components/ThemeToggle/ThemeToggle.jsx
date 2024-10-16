@@ -8,8 +8,10 @@ const ThemeToggle = () => {
         setIsDarkMode(checked);
     };
 
+
     useEffect(() => {
-        if (isDarkMode || localStorage.getItem("theme") === "light") {
+
+        if (isDarkMode && localStorage.getItem("theme") === "light" || localStorage.getItem("theme") === null) {
             document.body.setAttribute("data-theme", "dark");
             localStorage.setItem("theme", "dark");
         } 

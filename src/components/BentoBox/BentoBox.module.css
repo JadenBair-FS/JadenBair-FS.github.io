@@ -192,7 +192,7 @@ p {
         flex-direction: column;
         justify-content: center;
     }
-    .bentoBoxWithButton img {
+    .bentoBoxWithButton svg {
         width: 35%;
     }
 
@@ -223,7 +223,7 @@ p {
         font-size: 0rem;
     }
 
-    .bentoBoxWithButton img {
+    .bentoBoxWithButton svg {
         width: 100%;
     }
 
