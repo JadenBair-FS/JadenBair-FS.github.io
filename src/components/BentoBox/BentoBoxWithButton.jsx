@@ -65,7 +65,7 @@ const BentoBoxWithButton = (props) => {
             onClick={() => window.open(props.link)}
             onKeyDown={handleKeyPress}
         >
-            <h3>{props.text}</h3>
+            <h2>{props.text}</h2>
             {handleSVG(props.text)}
             {/* <img src={image} alt={`${props.text} logo`} /> */}
         </div>
