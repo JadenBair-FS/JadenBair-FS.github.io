@@ -38,6 +38,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: CNAME file
+        run: echo 'jadenbair.me' > ./dist/CNAME
+
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
