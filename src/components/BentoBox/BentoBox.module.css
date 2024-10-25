@@ -1,242 +1,249 @@
-@import url('../../var.css');
+@import url("../../var.css");
 
 .bentoBoxHeader {
-    background-color: var(--card-background);
-    border-radius: 20px;
-    filter: drop-shadow(var(--card-dropshadow));
+  background-color: var(--card-background);
+  border-radius: 20px;
+  filter: drop-shadow(var(--card-dropshadow));
 }
 
 .bentoBoxHeader h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .bentoBoxHeader h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .bentoBoxWithImage {
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform .2s;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+
+.bentoBoxWithImageOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  color: white;
 }
 
 .bentoBoxWithImage:hover {
-    cursor: pointer;
-    transform: scale(1.02);
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .box1 {
-    grid-area: bentoBox1;
+  grid-area: bentoBox1;
 }
 
 .box2 {
-    grid-area: bentoBox2;
+  grid-area: bentoBox2;
 }
 
 .box3 {
-    grid-area: bentoBox3;
+  grid-area: bentoBox3;
 }
 
 .box4 {
-    grid-area: bentoBox4;
-    background-position: left;
+  grid-area: bentoBox4;
+  background-position: left;
 }
 
 .box5 {
-    grid-area: bentoBox5;
+  grid-area: bentoBox5;
 }
 
 .headerBento1 {
-    grid-area: headerBento1;
+  grid-area: headerBento1;
 }
 
 .headerBento2 {
-    grid-area: headerBento2;
+  grid-area: headerBento2;
 }
 
 .headerBento3 {
-    grid-area: headerBento3;
+  grid-area: headerBento3;
 }
 
 .buttonBento1 {
-    grid-area: buttonBento1;
+  grid-area: buttonBento1;
 }
 
 .buttonBento2 {
-    grid-area: buttonBento2;
+  grid-area: buttonBento2;
 }
 
 .buttonBento3 {
-    grid-area: buttonBento3;
+  grid-area: buttonBento3;
 }
 
 .bentoBoxWithButton {
-    background-color: var(--card-background);
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    transition: transform .2s;
-    filter: drop-shadow(var(--card-dropshadow));
+  background-color: var(--card-background);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.2s;
+  filter: drop-shadow(var(--card-dropshadow));
 }
 
 .bentoBoxWithButton svg {
-    width: 15%;
+  width: 15%;
 }
 
 .bentoBoxWithButton:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    background-color: var(--card-hover);
-    color: var(--card-hover-text);
-    
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: var(--card-hover);
+  color: var(--card-hover-text);
 }
 
-
 .pGroup {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .textGroup {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .contactForm h1 {
-    font-size: 3rem;
-    padding: 0;
-    margin: 0;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
 }
 
 .contactFormTop {
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-    margin: 1rem;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin: 1rem;
 }
 
 .contactFormHeader {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contactFormTopInputs {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contactForm input {
-    margin-bottom: 1rem;
-    padding: .5rem;
-    border-radius: 10px;
-    background-color: var(--background);
-    border: var(--input-border);
-    font: inherit;
-    color: var(--text-color);
-
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--background);
+  border: var(--input-border);
+  font: inherit;
+  color: var(--text-color);
 }
 
 .contactFormBottom {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem; 
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
 
 .contactFormBottom textarea {
-    border-radius: 10px;
-    background-color: var(--background);
-    border: var(--input-border);
-    padding: .5rem;
-    font: inherit;
+  border-radius: 10px;
+  background-color: var(--background);
+  border: var(--input-border);
+  padding: 0.5rem;
+  font: inherit;
 }
 
 .contactFormButton {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    align-self: end;
-    width: 10%;
-    border: var(--input-border);
-    background-color: var(--card-background);
-    color: var(--text-color);
-    font: inherit;
-    font-weight: bold;
-    cursor: pointer;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  align-self: end;
+  width: 10%;
+  border: var(--input-border);
+  background-color: var(--card-background);
+  color: var(--text-color);
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .contactFormButton:hover {
-    background-color: var(--card-hover);
-    color: var(--card-hover-text);
+  background-color: var(--card-hover);
+  color: var(--card-hover-text);
 }
 
-
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 900px) {
-    .bentoBoxHeader {
-        text-align: center;
-    }
+  .bentoBoxHeader {
+    text-align: center;
+  }
 
-    .bentoBoxWithButton {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .bentoBoxWithButton {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .bentoBoxWithButton h2 {
-        font-size: 1rem;
-    }
+  .bentoBoxWithButton h2 {
+    font-size: 1rem;
+  }
 
-    .bentoBoxWithButton svg {
-        width: 35%;
-    }
+  .bentoBoxWithButton svg {
+    width: 35%;
+  }
 
-    .contactFormHeader {
-        align-items: center;
-        margin-bottom: 1rem;
-    }
+  .contactFormHeader {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
 
-    .contactFormTop {
-        grid-template-columns: 1fr;
-    }
+  .contactFormTop {
+    grid-template-columns: 1fr;
+  }
 
-    .contactFormButton {
-        width: 100%;
-    }
+  .contactFormButton {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-    .bentoBoxHeader h1 {
-        font-size: 1.5rem;
-    }
+  .bentoBoxHeader h1 {
+    font-size: 1.5rem;
+  }
 
-    .bentoBoxWithButton {
-        padding: auto;
-    }
+  .bentoBoxWithButton {
+    padding: auto;
+  }
 
-    .bentoBoxWithButton h2 {
-        font-size: 0rem;
-    }
+  .bentoBoxWithButton h2 {
+    font-size: 0rem;
+  }
 
-    .bentoBoxWithButton svg {
-        width: 100%;
-    }
+  .bentoBoxWithButton svg {
+    width: 100%;
+  }
 
-    .contactForm h1 {
-        font-size: 2rem;
-    }
+  .contactForm h1 {
+    font-size: 2rem;
+  }
 
-    .box4 {
-        background-position: center;
-    }
+  .box4 {
+    background-position: center;
+  }
 }

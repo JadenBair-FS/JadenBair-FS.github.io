@@ -1,4 +1,4 @@
-@import url('./var.css');
+@import url("./var.css");
 
 #root {
   margin: 0;
@@ -8,7 +8,7 @@
 .App {
   min-height: 100vh;
   width: 80vw;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .Top-Page {
@@ -31,21 +31,19 @@
   color: var(--text-color);
 }
 
-
 .Header-Container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-   "headerBento1 headerBento2 headerBento3";
+  grid-template-areas: "headerBento1 headerBento2 headerBento3";
   gap: 1rem;
 }
 
-.bento-button-container{
+.bento-button-container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1rem;
 }
-  
+
 .Projects-Container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -68,62 +66,63 @@
   filter: drop-shadow(var(--card-dropshadow));
 }
 
-
-
+@media (min-width: 3000px) {
+  .App {
+    width: 60vw;
+  }
+}
 
 @media (max-width: 900px) {
-
   #root {
     padding: 1rem;
   }
- 
+
   .Header-Container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
     grid-template-areas:
       "headerBento1"
       "headerBento2"
       "headerBento3";
-  
   }
-  .bento-button-container{
+  .bento-button-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
 
   .Projects-Container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 1fr .5fr .5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
     grid-template-areas:
       "bentoBox2 bentoBox2"
       "bentoBox1 bentoBox1"
       "bentoBox3 bentoBox3"
       "bentoBox4 bentoBox5";
   }
-
-
 }
 
 @media (max-width: 480px) {
+  .App {
+    width: 95vw;
+  }
+
   .Header-Container {
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr 1fr .5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
     grid-template-areas:
       "headerBento1"
       "headerBento2"
       "headerBento3";
   }
 
-  .bento-button-container{
+  .bento-button-container {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-
-
   .Projects-Container {
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "bentoBox2"
       "bentoBox1"
@@ -132,4 +131,3 @@
       "bentoBox5";
   }
 }
-
